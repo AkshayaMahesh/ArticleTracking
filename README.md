@@ -11,4 +11,4 @@ xml,xpath
 sqlite3
 mysql-connector-python
 
-![ERD ]()
+![ERD ](https://github.com/AkshayaMahesh/ArticleTracking/blob/main/erd.png)

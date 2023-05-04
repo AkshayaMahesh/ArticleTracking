@@ -1,0 +1,67 @@
+---
+title: "Part 3"
+author: "Akshaya Mahesh"
+date: "8/13/2022"
+output: html_document
+---
+
+```{r}
+library(RMySQL)
+library(DBI)
+library(sqldf)
+```
+
+```{r}
+db_user <- 'admin'
+db_password <- 'Dbms2022'
+db_name <- 'practicum2db'
+db_host <- 'practicum2db.c5harneqrwsu.us-east-1.rds.amazonaws.com'
+db_port <- 3306
+```
+
+```{r}
+mydb <-  dbConnect(MySQL(), user = db_user, password = db_password,
+                   dbname = db_name, host = db_host, port = db_port)
+```
+
+```{r}
+topAuthorsdf <- dbGetQuery(mydb, statement = paste("SELECT authorName, number_of_articles
+                                                FROM AuthorFacts
+                                                ORDER BY number_of_articles DESC, authorName
+                                                LIMIT 10"))
+topAuthorsdf
+```
+
+```{r}
+ggplot(topAuthorsdf, aes(x=topAuthorsdf$authorName,
+                         y=topAuthorsdf$number_of_articles, group = 1)) +
+  geom_line(color="#69b3a2", size=1) +
+  ggtitle("Top 10 authors with most articles") +labs(y="Number of articles",
+                                                     x="Author Names")+ 
+geom_text(aes(label=topAuthorsdf$number_of_articles), vjust=-.5)
+
+```
+
+The above viz. shows the top 10 authors who had the most publications. This helps us to know who has published more articles 
+
+```{r}
+topJournal <- dbGetQuery(mydb, statement = paste("SELECT JournalTitle, perYear 
+FROM  JournalFacts 
+GROUP BY  JournalTitle
+HAVING MAX(perYear)
+order by TotalPublications desc
+LIMIT 3
+"))
+
+head(topJournal)
+```
+
+```{r}
+ggplot(topJournal, aes(y=JournalTitle, x=perYear, group = 1)) +
+  geom_line (color="#69b3a2", size=1) +
+  ggtitle("Journal with the most publications") +
+geom_text(aes(label=perYear), vjust=-.5)+labs(x="Number of publications per Year",
+                                              y="Journal Title")
+```
+
+This gives the top journal that had the most published articles for a year and also gives us an idea that this is being widely researched in its respective field of study.

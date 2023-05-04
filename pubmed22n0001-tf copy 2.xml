@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PubmedArticleSet>
+  <PubmedArticle PMID="1">
+    <Article>
+      <Journal>
+        <ISSN IssnType="Print">0006-2944</ISSN>
+        <JournalIssue CitedMedium="Print">
+          <Volume>13</Volume>
+          <Issue>2</Issue>
+          <PubDate>
+            <Year>1975</Year>
+            <Month>Jun</Month>
+          </PubDate>
+        </JournalIssue>
+        <Title>Biochemical medicine</Title>
+        <ISOAbbreviation>Biochem Med</ISOAbbreviation>
+      </Journal>
+      <Language>eng</Language>
+      <ArticleTitle>Formate assay in body fluids: application in methanol poisoning.</ArticleTitle>
+      <AuthorList CompleteYN="Y">
+        <Author ValidYN="Y">
+          <LastName>Makar</LastName>
+          <ForeName>A B</ForeName>
+          <Initials>AB</Initials>
+        </Author>
+        <Author ValidYN="Y">
+          <LastName>McMartin</LastName>
+          <ForeName>K E</ForeName>
+          <Initials>KE</Initials>
+        </Author>
+        <Author ValidYN="Y">
+          <LastName>Palese</LastName>
+          <ForeName>M</ForeName>
+          <Initials>M</Initials>
+        </Author>
+        <Author ValidYN="Y">
+          <LastName>Tephly</LastName>
+          <ForeName>T R</ForeName>
+          <Initials>TR</Initials>
+        </Author>
+      </AuthorList>
+    </Article>
+  </PubmedArticle>
+  <PubmedArticle PMID="2">
+    <Article>
+      <Journal>
+        <ISSN IssnType="Print">0006-2944</ISSN>
+        <JournalIssue CitedMedium="Print">
+          <Volume>13</Volume>
+          <Issue>2</Issue>
+          <PubDate>
+            <Year>1975</Year>
+            <Month>Jun</Month>
+          </PubDate>
+        </JournalIssue>
+        <Title>Biochemical medicine</Title>
+        <ISOAbbreviation>Biochem Med</ISOAbbreviation>
+      </Journal>
+      <Language>eng</Language>
+      <ArticleTitle>Formate assay in body fluids: application in methanol poisoning.</ArticleTitle>
+      <AuthorList CompleteYN="Y">
+        <Author ValidYN="Y">
+          <LastName>Makar</LastName>
+          <ForeName>A B</ForeName>
+          <Initials>AB</Initials>
+        </Author>
+        <Author ValidYN="Y">
+          <LastName>McMartin</LastName>
+          <ForeName>K E</ForeName>
+          <Initials>KE</Initials>
+        </Author>
+        <Author ValidYN="Y">
+          <LastName>Palese</LastName>
+          <ForeName>M</ForeName>
+          <Initials>M</Initials>
+        </Author>
+        <Author ValidYN="Y">
+          <LastName>Tephly</LastName>
+          <ForeName>T R</ForeName>
+          <Initials>TR</Initials>
+        </Author>
+      </AuthorList>
+    </Article>
+  </PubmedArticle>
+  </PubmedArticleSet>
